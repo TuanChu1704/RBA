@@ -295,12 +295,41 @@
       background: #E50914;
   }
   
-  .video-container video{
-      width: 100%;
+#DevTeam {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
   }
   
-  .video-container{
-      margin-top: 1.5rem;
+  .heading {
+    text-align: center;
+  }
+  
+  .title-slider {
+    display: flex;
+    justify-content: center;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: center;
+  }
+  
+  .image {
+    text-align: center;
+  }
+  
+  .content {
+    text-align: center;
+  }
+  
+  .Teampro {
+    margin-top: 50px; /* Add some space between the table and the Teampro section */
   }
   
   /*media query*/
