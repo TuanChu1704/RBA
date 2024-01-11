@@ -1,0 +1,361 @@
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+  :root{
+    
+      --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+      --border: .1rem solid rgba(0,0,0,.1);
+      --border-hover: .1rem solid #000000;
+  }
+  
+  *{
+      font-family: 'Nunito', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      outline: none;
+      border: none;
+      text-transform: capitalize;
+      transition: all .2s linear;
+  }
+
+  body{
+    background-color:rgb(242, 188, 197);
+  }
+  html{
+      font-size: 62.5%;
+      overflow-x: hidden;
+      scroll-padding-top: 5.5rem;
+      scroll-behavior: smooth;
+  }
+  
+  html::-webkit-scrollbar{
+      width: .5rem;
+  }
+  
+  html::-webkit-scrollbar-track{
+      background: transparent;
+  }
+  
+  html::-webkit-scrollbar-thumb{
+      background: #000000;
+  }
+  
+  .heading{
+      text-align: center;
+      margin-bottom: 2rem;
+      position: relative;
+  }
+  
+  .heading::before{
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 100%;
+      height: .01rem;
+      background: rgba(0, 0, 0, 0.1);
+      z-index: -1;
+  }
+  
+  .heading span{
+      font-size: 3rem;
+      padding: .5rem 2 rem;
+      color:#f2e664;
+      background: rgb(52, 52, 52);
+      border: var(--border);
+  }
+  
+  .title .title-slider .box{
+      width: 25rem;
+      margin: 2rem 0;
+      position: relative;
+      overflow: hidden;
+      border: var(--border);
+      text-align: center;
+      left: 0%;
+      margin-right: 40px
+  }
+  
+  .title .title-slider .box .image{
+      padding: 1rem;
+      background: linear-gradient(15deg,rgb(247, 247, 174) 30%,rgb(251, 142, 142) 30.1%);
+  }
+  
+  .title .title-slider .box .content{
+    padding: 1rem;
+    background: linear-gradient(10deg,rgb(251, 142, 142) 20%,rgb(247, 247, 174) 20.1%);
+    font-size: large;
+}
+
+  .title .title-slider .box .image img{
+      height: 25rem;
+      
+  }
+  
+  .title-slider {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .title .Teampro h1{
+    color: rgb(249, 204, 89);
+    font-size: 4rem;
+    line-height: 1.5; /* adjust line height */
+    letter-spacing: 0.1rem; /* add some space between letters */
+    text-shadow: 1px 1px rgb(236, 34, 34); 
+  }
+
+  .title .Teampro p{
+    color:rgb(42, 109, 192);
+    font-size: 2rem;
+    line-height: 1.5; /* adjust line height */
+    letter-spacing: 0.1rem; /* add some space between letters */
+    text-shadow: 1px 1px rgb(247, 68, 68); 
+  }
+
+.title2 .title-slider .box{
+    width: 50rem;
+    margin: 2rem 0;
+    position: relative;
+    overflow: hidden;
+    border: var(--border);
+    text-align: center;
+    left: 0%;
+    margin-right: 70px;
+    margin-bottom: 20px;
+}
+
+.title2 .title-slider .box .image{
+    padding: 1rem;
+    background: linear-gradient(15deg,#eee 30%,#fff 30.1%);
+}
+
+.title2 .title-slider .box .content{
+  padding: 1rem;
+  background: linear-gradient(8deg,rgb(247, 247, 174) 80%,rgb(251, 142, 142) 81.1%);
+  font-size: large;
+}
+
+  .title2 .title-slider .box .images img{
+    height: 100%;
+    width: 100%;
+  }
+
+  .title2 .Gamestory h1{
+    color: rgb(249, 204, 89);
+    font-size: 4rem;
+    line-height: 1.5; /* adjust line height */
+    letter-spacing: 0.1rem; /* add some space between letters */
+    text-shadow: 1px 1px rgb(236, 34, 34); 
+  }
+
+  .title2 .Gamestory p{
+    color:rgb(42, 109, 192);
+    font-size: 2rem;
+    line-height: 1.5; /* adjust line height */
+    letter-spacing: 0.1rem; /* add some space between letters */
+    text-shadow: 1px 1px rgb(236, 34, 34); 
+  }
+
+  section{
+      padding: 5rem 9%;
+  }
+  
+  .Aboutus .row{
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+  }
+  
+  #Aboutus {
+    background-image: url('image/Bản\ sao\ mainmenu.jpeg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.8) contrast(2); /* dim the background image */
+}
+
+.Aboutus .content h1 {
+    color: rgb(251, 2, 2); /* set text color to white */
+    font-size: 5rem; /* increase font size */
+    letter-spacing: 0.1rem; /* add some space between letters */
+    line-height: 1.2; /* increase line height */
+    text-shadow: 1px 1px #888; 
+}
+
+.Aboutus .content p {
+    color: rgb(211, 215, 186); /* set text color to black */
+    font-size: 2rem; /* keep font size */
+    line-height: 1.5; /* adjust line height */
+    letter-spacing: 0.1rem; /* add some space between letters */
+    text-shadow: 1px 1px rgb(236, 34, 34); 
+}
+
+.vid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Match parent width */
+    height: 56.25%; /* Match aspect ratio of YouTube video (16:9) */
+    padding: 25px; /* Add some space around the video */
+}
+#download {
+    padding: 50px; /* add some padding */
+    text-align: center; /* center text horizontally */
+  }
+  
+  #download h1 {
+    margin-top: 0; /* remove default margin-top */
+    font-size: 5rem;
+  }
+  
+  .btn {
+    display: inline-block; /* display as inline-block */
+    padding: 10px 20px; /* add some padding */
+    border: none; /* remove default border */
+    border-radius: 5px; /* add some border radius */
+    background-color: #afac4c; /* set background color to green */
+    color: rgb(255, 255, 255); /* set text color to white */
+    cursor: pointer; /* change cursor to pointer on hover */
+    font-size: 2rem;
+  }
+  
+  .btn.btn-primary { /* styles for primary button (green) */
+    margin-right: 20px; /* add some margin-right */
+  }
+  
+  .btn:hover{
+      background:rgb(92, 100, 0) ;
+  }
+  
+  header{
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background:#000000;
+      padding: 1rem 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 1000;
+      box-shadow: var(--box-shadow);
+  }
+    
+  header .logo {
+      font-size: 5rem;
+      font-weight: bolder;
+      color:rgb(250, 250, 100);
+  }
+  
+  header .logoimg{
+      width: 100px;
+      cursor: pointer;;
+  }
+  
+  header .navbar a{
+      font-size: 1.7rem;
+      border-radius: .5rem;
+      padding: .5rem 1.5rem;
+      color:#fff;
+  }
+  
+  header .navbar a.active,
+  header .navbar a:hover{
+      color:#fff;
+      background: #E50914;
+  }
+  
+  .fotter{
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background:#000000;
+      padding: 1rem 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 1000;
+      box-shadow: var(--box-shadow);
+  }
+  
+  .fotter .navbar a{
+      font-size: 1.7rem;
+      border-radius: .5rem;
+      padding: .5rem 1.5rem;
+      color:#fff;
+  }
+  .fotter .navbar .active,
+  .fotter .navbar a:hover{
+      color:#fff;
+      background: #E50914;
+  }
+  
+  .video-container video{
+      width: 100%;
+  }
+  
+  .video-container{
+      margin-top: 1.5rem;
+  }
+  
+  /*media query*/
+  @media(max-width: 990px){
+      html{
+          font-size: 55%;
+      }
+      header{
+          padding: 1rem 2rem;
+      }
+      section{
+          padding: 3rem 2rem;
+      }
+  }
+  
+  @media(max-width:768px){
+      header .icons #menu-bars{
+          display: inline-block;
+      }
+      header .navbar{
+          position: absolute;
+          top:100%;
+          left: 0;
+          right: 0;
+          background: #000000;
+          border-top: .1rem solid rgba(0,0,0,.2);
+          border-bottom: .1rem solid rgba(0,0,0,.2);
+          padding: 1rem;
+          clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      }
+      header .navbar.active{
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+      header .navbar a{
+          display: block;
+          padding: 1.5rem;
+          margin: 1rem;
+          font-size: 2rem;
+          background: #E50914;
+      }
+  
+      .Aboutus .content h3{
+          font-size: 3.5rem;
+      }
+  
+      .Aboutus .content {
+          text-align: center;
+      }
+  }
+  
+  @media(max-width:468px){
+      html{
+          font-size: 50%;
+      }
+      header{
+          padding: 1rem 2rem;
+      }
+  }
